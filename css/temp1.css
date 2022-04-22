@@ -1,0 +1,406 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0px;
+}
+.container{
+
+    height: 100%;
+    display: flex;
+    margin-left: 23%;
+    margin-right: 10%;
+    margin-top: 20px;
+    border: 0.1px solid blue;
+    text-align: center;
+    width: 60%;
+}
+#left{
+    background-color: rgb(15, 182, 248);
+    width:40%;
+
+
+}
+center{
+    display: flex;
+}
+    #right{
+        background-color: rgb(245, 248, 250);
+        width: 59.7%;
+    }
+    #profPic{
+        background-color: blue;
+        width: 300px;
+        height: 240px;
+    }
+    img{
+        transition: 1s;
+    }
+    img:hover{
+        opacity:0.6;
+        transition: 1s;
+    }
+    #prof{
+        width: 100%;
+        height: 100%;
+    }
+    #profName{
+        padding-top: 30px;
+        color: white;
+        font-size: 20px;
+        font-weight: bolder;
+        padding-left: 20px;
+        padding-right: 20px;
+        
+        margin-bottom: 20px;
+    }
+    #occu{
+        padding-left: 20px;
+        padding-right: 20px;
+        font-weight: bold;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .personalInfo{
+        /* border: 0.2px solid black; */
+        height: 35px;
+        text-align: left;
+        padding-left: 10px;
+        padding: 5px;
+        color: white;
+    }
+    .infoT{
+        padding: 5px;
+        font-size: 16px;
+    }
+    .personalInfo > img {
+        height: 40px;
+        width: 40px;
+        float: left;
+        margin-left: 20px;
+        margin-right: 20px ;
+        /* margin: 5px; */
+        
+    }
+    hr{
+        width: 80%;
+        color: white;
+        MARGIN-top: 10PX;
+    }
+   h2{
+        margin: 0px;
+        padding: 0px;
+        color: white;
+        font-size: 20px;
+        font-weight: bolder;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 0px;
+        
+        /* float: left;
+        margin: 1px; */
+        
+    }
+    .skill{
+        display: flex ;
+        width: 100%;
+        text-align: center;
+        color: white;
+        padding: 2px;
+    }
+    .skill > div{
+        float: right;
+    }
+    .skill1{
+        width: 2px;
+        padding-left: 10px;
+    }
+    .res{
+        width: 2px;
+        color: white;
+    }
+    .progress{
+        
+        width: 100px;
+        margin-left: 10px;
+        height: 4px;
+        margin-top: 10px;
+        background-color: rgb(6, 46, 83);
+    }
+    .prog{
+        
+        width: 70%;
+        height: 4px;
+        background-color: white;
+    }
+    .right{
+        height: 100%;
+        text-align: left;
+        padding-left: 30px;
+        padding-right: 50px;
+        word-spacing: 1px;
+    }
+    .right >div>h3{
+        color: rgb(72, 148, 248);
+        margin: 2px 0px;
+        padding: 10px 0px;
+        height: auto;
+    }
+    .right >hr{
+        height: 2px;
+        background-color: rgb(66, 141, 240);
+        width: 90%;
+    }
+    .right > div{
+        height: 35%;
+    }
+    .right :first-child{
+        height: 10%;
+    }
+    .right :last-child{
+        height: 10%;
+    }
+    .year{
+        margin: 8px;
+        padding-top: 8px;
+        font-weight: bolder;
+        font-size: 18px;
+    }
+    
+    .heading{
+        font-weight: 300;
+        font-size: 18px;
+        margin-left: 16px;
+    }
+    .text{
+        margin-left: 16px;
+        font-weight: 20;
+    }
+    .vertical{
+        transform: rotate3d(0,0,1,90deg);
+        
+        width: 300px;
+        left: 2;
+    }
+    textarea{
+        width: 100%;
+
+    }
+    button{
+        background-color: rgb(95, 182, 95);
+        color: white;
+        margin: 4px;
+        /* font-weight: bolder; */
+    }
+    .plus{
+        text-align: center;
+        font-size: 25px;
+        color: white;
+        border-radius: 100% 90% 100% 100%;
+        padding: 2px;
+        width: 30px;
+        font-weight: bolder;
+        height: 30px;
+        background-color: rgb(195, 238, 109);
+    }
+    .add{
+        display: flex;
+        margin: 4px;
+        background-color: rgb(195, 238, 109);
+        width: 50%;
+        padding: 2px;
+    }
+    /* .add :hover{
+        border: 2px solid rgb(161, 231, 22);
+        background-color: rgb(222, 241, 184); 
+    } */
+    .addText{
+        padding-top: 4px;
+        padding-inline-end: 3px;
+        color: rgb(80, 63, 63);
+    }
+
+    @media screen and (max-width: 400px) {
+        .container{
+
+            height: 100%;
+            display: flex;
+            margin-left: 1%;
+            margin-right: 2%;
+            margin-top: 2px;
+            border: 0.1px solid blue;
+            text-align: center;
+            width: 100%;
+        }
+        #profPic{
+            background-color: blue;
+            width: 100%;
+            height: 140px;
+        }
+        
+    #profName{
+        padding-top: 30px;
+        color: white;
+        font-size: 20px;
+        font-weight: bolder;
+        padding-left: 5px;
+        padding-right: 5px;
+        
+        margin-bottom: 10px;
+    }
+    #occu{
+        padding-left: 5px;
+        padding-right: 5px;
+        font-weight: bold;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .personalInfo{
+        /* border: 0.2px solid black; */
+        height: 35px;
+        text-align: left;
+        padding-left: 1px;
+        padding: 5px;
+        color: white;
+    }
+    .infoT{
+        padding: 0px;
+        font-size: 16px;
+    }
+    .personalInfo > img {
+        height: 20px;
+        width: 20px;
+        float: left;
+        margin-left: 3px;
+        margin-right: 5px ;
+        /* margin: 5px; */
+        
+    }
+    hr{
+        width: 80%;
+        color: white;
+        MARGIN-top: 10PX;
+    }
+   h2{
+        margin: 0px;
+        padding: 0px;
+        color: white;
+        font-size: 20px;
+        font-weight: bolder;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 0px;
+        
+        /* float: left;
+        margin: 1px; */
+        
+    }
+    .skill{
+        display: flex ;
+        width: 100%;
+        text-align: center;
+        color: white;
+        padding: 2px;
+    }
+    .skill > div{
+        float: right;
+    }
+    .skill1{
+        width: 2px;
+        padding-left: 10px;
+    }
+    .res{
+        width: 2px;
+        color: white;
+    }
+    .progress{
+        
+        width: 100px;
+        margin-left: 10px;
+        height: 4px;
+        margin-top: 10px;
+        background-color: rgb(6, 46, 83);
+    }
+    .prog{
+        
+        width: 50%;
+        height: 4px;
+        background-color: white;
+    }
+    .right{
+        height: 100%;
+        text-align: left;
+        padding-left: 30px;
+        padding-right: 50px;
+        word-spacing: 1px;
+    }
+    .right >div>h3{
+        color: rgb(72, 148, 248);
+        margin: 2px 0px;
+        padding: 10px 0px;
+        height: auto;
+    }
+    .right >hr{
+        height: 2px;
+        background-color: rgb(66, 141, 240);
+        width: 90%;
+    }
+    .right > div{
+        height: 35%;
+    }
+    .right :first-child{
+        height: 10%;
+    }
+    .right :last-child{
+        height: 10%;
+    }
+    .year{
+        margin: 4px;
+        padding-top: 4px;
+        font-weight: bolder;
+        font-size: 18px;
+    }
+    
+    .heading{
+        font-weight: 300;
+        font-size: 15px;
+        margin-left: 8px;
+    }
+    .text{
+        margin-left: 8px;
+        font-weight: 20;
+    }
+    .vertical{
+        transform: rotate3d(0,0,1,90deg);
+        
+        width: 300px;
+        left: 2;
+    }
+    textarea{
+        width: 100%;
+
+    }
+    button{
+        background-color: rgb(95, 182, 95);
+        color: white;
+        margin: 4px;
+        /* font-weight: bolder; */
+    }
+    .plus{
+        text-align: center;
+        font-size: 25px;
+        color: white;
+        border-radius: 100% 90% 100% 100%;
+        padding: 2px;
+        width: 30px;
+        font-weight: bolder;
+        height: 30px;
+        background-color: rgb(195, 238, 109);
+    }
+    .add{
+        display: flex;
+        margin: 4px;
+        background-color: rgb(195, 238, 109);
+        width: 100%;
+        padding: 2px;
+    }
+        
+    }

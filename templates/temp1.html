@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/temp1.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="container" id="container">
+        <div id="left" class="left">
+            <div id="profPic" onclick="update()"> 
+                <img src="../uploads/profPics/1.jpg" id="prof" alt="">
+            
+                
+            </div>
+            <div id="profName" onclick="swap(this)">Nzegge shirean Nzegge</div>
+            <div id="occu"   onclick="swap(this)">Computer Engineering Student</div>
+            <div class="personalInfo" >
+                <img src="../img/icons/f6.png" alt="icon" /> <div class="infoT" id="addres" onclick="swap(this)">New road Buead  Town</div>
+            </div>
+            <div class="personalInfo" >
+                <img src="../img/icons/f6.png" alt="icon" /> <div class="infoT" id="contact"   onclick="swap1(this,'number')">6795094959</div></div>
+            <div class="personalInfo" >
+                <img src="../img/icons/f6.png" alt="icon" /> <div class="infoT" id="link"  onclick="swap1(this,'link')">instagram</div></div>
+            <div class="personalInfo" >
+                <img src="../img/icons/f6.png" alt="icon" /> <div class="infoT" id="email"  onclick="swap1(this,'email')">email</div></div>
+                <hr>
+                <div class="skills">
+                    <h2>SKILL'S</h2>
+                    <br>
+                    <div class="skill"> <div id="skill1">master in all</div> <div id="progress1" class="progress"> <div class="prog" id="prog1"></div></div><div class="res" id="res1">100%</div></div>
+                    <div class="skill"> <div id="skill2">programming</div> <div id="progress2" class="progress"> <div class="prog" id="prog2"></div></div><div class="res" id="res1">100%</div></div>
+                    <div class="skill"> <div id="skill3">finance</div> <div id="progress3" class="progress"> <div class="prog" id="prog3"></div></div><div class="res" id="res1">100%</div></div>
+                    <div class="skill"> <div id="skill4">insurance</div> <div id="progress4" class="progress"> <div class="prog" id="prog4"></div></div><div class="res" id="res1">100%</div></div>
+                    <div class="skill"> <div id="skill5">html</div> <div id="progress5" class="progress"> <div class="prog" id="prog5"></div></div><div class="res" id="res1">100%</div></div>
+                    <hr>
+                    <H2>SOCIAL</H2>
+                    <br>
+                    <div class="personalInfo" id="adress">
+                        <img src="../img/icons/f6.png" alt="icon" /> <div class="infoT" id="address">facebook link</div>
+                    </div>
+                    <div class="personalInfo" id="contact">
+                        <img src="../img/icons/f6.png" alt="icon" /> <div class="infoT" id="contact">instagram link</div></div>
+                    <div class="personalInfo" id="info">
+                        <img src="../img/icons/f6.png" alt="icon" /> <div class="infoT" id="addresst">twiter link</div></div>
+                    <div class="personalInfo" id="email">
+                        <img src="../img/icons/f6.png" alt="icon" /> <div class="infoT" id="addresst">bla bla bla link</div></div>
+                </div>
+
+        </div>
+        
+        <div id="right" class="right ">
+            <div class="aboutUs"><h3>ABOUT ME</h3>
+            <div class="textfield" id="text"  onclick="swap1(this,'textarea')">
+                write information about you here, may be short, long simple. 
+                Anything about yourselve you would like to be known for, 
+                or any expresion, out of topic experience or short example, character,
+                you get it.
+            </div>
+            
+            </div>
+            <hr>
+            <!-- <hr class="vertical"> -->
+            <div class="wexp" id="workExp"><h3>WORK EXPERIENCE</h3>
+                <div class="exp">
+                    <div class="year"   id="yr1" onclick="swap(this)"> Example 2019-2020</div>
+                    <div class="heading"   onclick="swap(this)" id="h1">worked as manager</div>
+                    <div class="text"   onclick="swap1(this,'textarea')" id="t1">worked as a manager in green field for a while untill my car broke down</div>
+                </div>
+               
+            
+            </div>
+             <div class="add" id="addExp" onclick="addExp()">
+                    <div class="plus">+</div>
+                    <div class="addText">Add work experience</div>
+                </div>
+            <hr>
+            <div class=""><h3>EDUCATION</h3>
+            
+                <div class="exp" id="Edu">
+                    <div class="year" onclick="swap(this)" id="ey1">2019-2020</div>
+                    <div class="heading" onclick="swap(this)" id="eh1">worked as manager</div>
+                    <div class="text" onclick="swap1(this,'textarea')" id="et1">worked as a manager in green field for a while untill my car broke down</div>
+                </div>
+                
+            </div>
+            <div class="add" id="addEdu" onclick="addEdu()">
+                    <div class="plus">+</div>
+                    <div class="addText">Add Qualification</div>
+                </div>
+            <hr>
+            <div class=""><h3>HOBBY</h3>
+                <ul id="hobby">
+                    <li class="heading"   onclick="swap(this)"  id="hb1">Reading</li>
+            </ul>
+            <div class="add" id="addHb" onclick="addHb()">
+                <div class="plus">+</div>
+                <div class="addText">Add Hobby</div>
+            </div>
+            
+            </div>
+        </div>
+    </div><center>
+        <div class="save" id="save">
+        <button class="download"style="width: 100px; height: 40px;">Save Template</button>
+    </div>
+   <div class="download" id="download" onclick="download(this)">
+    <button class="download"style="width: 100px; height: 40px;">Download Template</button>
+    
+    </div></center>
+    <!-- <input type="file" name="fileupload" id="fileupload"/>
+    <button id="upload-button" onclick="uploadFile()">change pic</button> -->
+</body>
+<script src="../js/temp1.js"></script>
+</html>
